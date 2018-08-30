@@ -59,13 +59,13 @@ function initGraphicsUpdaters() {
 // Creates event handlers that updates rectangle width and height
 function initEventHandlers(widthElement, heightElement) {
     // Creates event handler for widthElement
-    widthElement.on('keyup change click', () => {
+    widthElement.on('keyup change click mousewheel', () => {
         const widthValue = Number(widthElement.val());
         updateWidth(widthValue);
     });
 
     // Creates event handler for heightElement
-    heightElement.on('keyup change click', () => {
+    heightElement.on('keyup change click mousewheel', () => {
         const heightValue = Number(heightElement.val());
         updateHeight(heightValue)
     });
